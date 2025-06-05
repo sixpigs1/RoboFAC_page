@@ -26,7 +26,7 @@
 
 
     <title>RoboFAC: A Comprehensive Framework for Robotic Failure Analysis and Correction</title>
-    <link rel="icon" type="image/x-icon" href="static/images/robot.ico">
+    <link rel="icon" type="image/x-icon" href="static/icons/robot.ico">
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
     <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -92,17 +92,6 @@
                                     </a>
                                 </span>
 
-                                <!-- Supplementary PDF link -->
-                                <!-- <span class="link-block">
-                                    <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                                        class="external-link button is-normal is-rounded is-dark">
-                                        <span class="icon">
-                                            <i class="fas fa-file-pdf"></i>
-                                        </span>
-                                        <span>Supplementary</span>
-                                    </a>
-                                </span> -->
-
                                 <!-- Github link -->
                                 <span class="link-block">
                                     <a href="https://github.com/MINT-SJTU/RoboFAC" target="_blank"
@@ -124,6 +113,30 @@
                                         <span>arXiv</span>
                                     </a>
                                 </span>
+
+                                <!-- Dataset link -->
+                                <span class="link-block">
+                                    <a href="https://huggingface.co/datasets/MINT-SJTU/RoboFAC-dataset" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <img src="static/icons/huggingface.svg" alt="Hugging Face Logo"
+                                                style="height: 1em; vertical-align: middle;">
+                                        </span>
+                                        <span>Dataset</span>
+                                    </a>
+                                </span>
+
+                                <!-- Dataset link -->
+                                <span class="link-block">
+                                    <a href="https://huggingface.co/MINT-SJTU/RoboFAC-7B" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <img src="static/icons/huggingface.svg" alt="Hugging Face Logo"
+                                                style="height: 1em; vertical-align: middle;">
+                                        </span>
+                                        <span>Model</span>
+                                    </a>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -131,25 +144,6 @@
             </div>
         </div>
     </section>
-
-
-    <!-- Teaser video-->
-    <!-- <section class="hero teaser">
-        <div class="container is-max-desktop">
-            <div class="hero-body">
-                <video poster="" id="tree" autoplay controls muted loop height="100%">
-                    Your video here
-                    <source src="static/videos/banner_video.mp4" type="video/mp4">
-                </video>
-                <h2 class="subtitle has-text-centered">
-                    Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at,
-                    placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut
-                    maximus.
-                </h2>
-            </div>
-        </div>
-    </section> -->
-    <!-- End teaser video -->
 
     <!-- Paper abstract -->
     <section class="section hero is-light">
@@ -260,28 +254,21 @@
         .video-carousel {
             display: flex;
             overflow-x: auto;
-            /* 横向滚动 */
             scroll-snap-type: x mandatory;
-            /* 滚动时自动对齐 */
             gap: 1rem;
-            /* 视频对之间的间距 */
             padding: 1rem 0;
         }
 
 
         .video-pair video {
             width: 400px;
-            /* 你可以自定义想要的宽度 */
             aspect-ratio: 1/1;
-            /* 保证 1:1 比例 */
             object-fit: cover;
-            /* 填充整个视频容器 */
             border-radius: 0.6rem;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
     </style>
 
-    <!-- 这里放一个我们的测试数据的情况 -->
     <section class="section">
         <div class="container">
             <h2 class="title is-3 has-text-centered">Evaluation on RoboFAC Bench</h2>
@@ -292,7 +279,7 @@
                             <img src="static/images/result.svg" alt="RoboFAC System Architecture">
                         </figure>
                         <p class="has-text-centered">
-                            Scores for different dimensions on RoboFAC Benchmark
+                            Scores for different dimensions on RoboFAC Benchmark.
                         </p>
                     </div>
                 </div>
@@ -339,7 +326,6 @@
         </div>
     </section>
 
-    <!-- 这里放真机的结果 -->
     <section class="section">
         <div class="container">
             <h2 class="title is-3 has-text-centered">Realworld Control Result</h2>
